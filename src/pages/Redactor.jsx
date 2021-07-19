@@ -238,75 +238,117 @@ function Redactor() {
     }, []);
     return (
         <div>
+
+
+<ul class="main-menu">
+    <li class="active"><a href="/">Главная</a></li>
+    <li><a href="/red">Redactor</a></li>   
+    <li><a href="/price">Услуги</a></li>
+    <li><a href="/news">Новости</a></li>
+    <li><a href="/galery">Фотогалерея</a></li>
+    <li><a href="#url">Контакты</a></li>       
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div className="editor-buttons">
+        <input type="file" id="upload-file" placeholder="Upload a Picture" />
+        <br/>
+        <button id="vintage-btn" class="glow-on-hover" type="button">Vintage</button>
+        <button id="lomo-btn" class="glow-on-hover" type="button">Lomo</button>
+        <button id="clarity-btn" class="glow-on-hover" type="button">Clarity</button>
+        <button id="sincity-btn" class="glow-on-hover" type="button">Sin City</button>
+        <button id="crossprocess-btn" class="glow-on-hover" type="button">Cross Process</button>
+        <button id="pinhole-btn" class="glow-on-hover" type="button">Pinhole</button>
+        <button id="nostalgia-btn" class="glow-on-hover" type="button">Nostalgia</button>
+        <button  class="glow-on-hover" type="button">Her Majesty</button>
+        </div>
         <div className="preview-wrapper">
         <canvas id="canvas"></canvas>
       </div>
-      <div className="filter-buttons">
-        <div className="filter-group">
-          <button id="brightness-dec">-</button>
-          <span className="filter-name">Brightness</span>
-          <button id="brightness-inc">+</button>
-        </div>
-        <div className="filter-group">
-          <button id="contrast-dec">-</button>
-          <span className="filter-name">Contrast</span>
-          <button id="contrast-inc">+</button>
-        </div>
-        <div className="filter-group">
-          <button id="saturation-dec">-</button>
-          <span className="filter-name">Saturation</span>
-          <button id="saturation-inc">+</button>
-        </div>
-        <div className="filter-group">
-          <button id="vibrance-dec">-</button>
-          <span className="filter-name">Vibrance</span>
-          <button id="vibrance-inc">+</button>
-        </div>
-        <div className="filter-group">
-          <button id="exposure-dec">-</button>
-          <span className="filter-name">Exposure</span>
-          <button id="exposure-inc">+</button>
-        </div>
-        <div className="filter-group">
-          <button id="noise-dec" className="disabled">-</button>
-          <span className="filter-name">Noise</span>
-          <button id="noise-inc">+</button>
-        </div>
-        <div className="filter-group">
-          <button id="sharpen-dec" className="disabled">-</button>
-          <span className="filter-name">Sharpen</span>
-          <button id="sharpen-inc">+</button>
-        </div>
-        <div className="filter-group">
-          <button id="sepia-dec" className="disabled">-</button>
-          <span className="filter-name">Sepia</span>
-          <button id="sepia-inc">+</button>
-        </div>
-        <div className="filter-group">
-          <button id="hue-dec" className="disabled">-</button>
-          <span className="filter-name">Hue</span>
-          <button id="hue-inc">+</button>
-        </div>
-        <div className="filter-group">
-          <button id="blur-dec" className="disabled">-</button>
-          <span className="filter-name">Blur</span>
-          <button id="blur-inc">+</button>
-        </div>
-        <div className="filter-group">
-          <button id="gamma-dec" className="disabled">-</button>
-          <span className="filter-name">Gamma</span>
-          <button id="gamma-inc">+</button>
-        </div>
-        <div className="filter-group">
-          <button id="clip-dec" className="disabled">-</button>
-          <span className="filter-name">Clip</span>
-          <button id="clip-inc">+</button>
-        </div>
-      </div>
+
       <div className="editor-buttons">
         <input type="file" id="upload-file" placeholder="Upload a Picture" />
-        <label htmlFor="upload-file">Upload a Picture</label>
-        <button id="download-btn">Download Image</button>
+        <label htmlFor="upload-file">Загрузить картинку</label>
+        <button id="download-btn">Скачать изображение</button>
+        </div>
+
+
+      <div className="filter-buttons">
+        <div className="filter-group">
+          <button id="brightness-dec" class="button1">-</button>
+          <span className="filter-name">Яркость</span>
+          <button id="brightness-inc" class="button1">+</button>
+        </div>
+        <div className="filter-group">
+          <button id="contrast-dec" class="button1">-</button>
+          <span className="filter-name">Контраст</span>
+          <button id="contrast-inc" class="button1">+</button>
+        </div>
+        <div className="filter-group">
+          <button id="saturation-dec" class="button1">-</button>
+          <span className="filter-name">Насыщенность</span>
+          <button id="saturation-inc" class="button1">+</button>
+        </div>
+        <div className="filter-group">
+          <button id="vibrance-dec" class="button1">-</button>
+          <span className="filter-name">Вибрация</span>
+          <button id="vibrance-inc" class="button1">+</button>
+        </div>
+        <div className="filter-group">
+          <button id="exposure-dec" class="button1">-</button>
+          <span className="filter-name">Экспозиция</span>
+          <button id="exposure-inc" class="button1">+</button>
+        </div>
+        <div className="filter-group">
+          <button id="noise-dec" className="disabled" class="button1">-</button>
+          <span className="filter-name">Шум</span>
+          <button id="noise-inc" class="button1">+</button>
+        </div>
+        <div className="filter-group">
+          <button id="sharpen-dec" className="disabled" class="button1">-</button>
+          <span className="filter-name">Резкость</span>
+          <button id="sharpen-inc" class="button1">+</button>
+        </div>
+        <div className="filter-group">
+          <button id="sepia-dec" className="disabled" class="button1">-</button>
+          <span className="filter-name">Сепия</span>
+          <button id="sepia-inc" class="button1">+</button>
+        </div>
+        <div className="filter-group">
+          <button id="hue-dec" className="disabled" class="button1">-</button>
+          <span className="filter-name">Оттенок</span>
+          <button id="hue-inc" class="button1">+</button>
+        </div>
+        <div className="filter-group">
+          <button id="blur-dec" className="disabled" class="button1">-</button>
+          <span className="filter-name">Размытие</span>
+          <button id="blur-inc" class="button1">+</button>
+        </div>
+        <div className="filter-group">
+          <button id="gamma-dec" className="disabled" class="button1">-</button>
+          <span className="filter-name">Гамма</span>
+          <button id="gamma-inc" class="button1">+</button>
+        </div>
+        <div className="filter-group">
+          <button id="clip-dec" className="disabled" class="button1">-</button>
+          <span className="filter-name">Клип</span>
+          <button id="clip-inc" class="button1">+</button>
+        </div>
+      </div>
+      {/* <div className="editor-buttons">
+        <input type="file" id="upload-file" placeholder="Upload a Picture" />
+        <label htmlFor="upload-file">Загрузить картинку</label>
+        <button id="download-btn">Скачать изображение</button>
         <br/>
         <button id="vintage-btn">Vintage</button>
         <button id="lomo-btn">Lomo</button>
@@ -316,7 +358,10 @@ function Redactor() {
         <button id="pinhole-btn">Pinhole</button>
         <button id="nostalgia-btn">Nostalgia</button>
         <button id="majestic-btn">Her Majesty</button>
-        </div>
+        </div> */}
+
+
+
     </div>
     );
 }

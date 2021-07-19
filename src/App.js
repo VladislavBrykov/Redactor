@@ -26,6 +26,9 @@ import AppMenu from './components/menu'
 // import Public_OneEvent from './pages/Public_OneEvent';
 
 import Redactor from './pages/Redactor'
+import Price from './pages/Price'
+import AppNews from './pages/News'
+import Galery from './pages/Galery'
 
 
 import React, { useEffect, useState } from "react";
@@ -69,11 +72,13 @@ const App = () => {
 
   return (
     <Router>
-        <AppMenu loggedIn={loggedIn} changeLoggedIn={changeLoggedIn} />
-
-      <div className="App">
-        {/* //         <ul className="links"> */}
+        {/* <AppMenu loggedIn={loggedIn} changeLoggedIn={changeLoggedIn} /> */}
         <AppHeader loggedIn={loggedIn} changeLoggedIn={changeLoggedIn} />
+
+        <div>
+
+      {/* <div className="App"> */}
+        {/* //         <ul className="links"> */}
         
         {/* //           <li>
 //             <Link to="/">Home</Link>
@@ -92,6 +97,9 @@ const App = () => {
           {/* <Route exact path="/new_calendar" render={() => <NewCalendar />} /> */}
           <Route exact path="/" render={() => <MainPage />} />
           <Route exact path="/red" render={() => <Redactor />} />
+          <Route exact path="/price" render={() => <Price />} />
+          <Route exact path="/news" render={() => <AppNews />} />
+          <Route exact path="/galery" render={() => <Galery />} />
 
           {/* <Route exact path="/calendar" component={Games} />
           <Route exact path="/exemple-calendar" render={() => <CalendarPage />} />
@@ -116,8 +124,9 @@ const App = () => {
 
 
         </Switch>
+        </div>
         <Footer />
-      </div>
+      
       
     </Router>
   )

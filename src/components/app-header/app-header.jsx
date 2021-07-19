@@ -36,7 +36,7 @@ class AppHeader extends React.Component {
             : <div className="header">
               <button id="btn"><Link to="/login">Login</Link></button>
               <button id="btn"><Link to="/registration">Registration</Link></button>
-              <a href="/login" className="logo">Возможности ограничены: Авторизируйтесь</a>
+              <a href="/login" className="logo">Неограниченные возможности: Авторизируйтесь</a>
             </div>
         }
       </div>

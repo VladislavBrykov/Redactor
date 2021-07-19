@@ -21,7 +21,8 @@
         "react-nba-logos": "1.0.6",
         "react-router-dom": "5.1.2",
         "react-scripts": "^4.0.3",
-        "sass": "^1.32.11"
+        "sass": "^1.32.11",
+        "swiper": "^6.7.5"
     },
     "devDependencies": {
         "typescript": "3.3.3"

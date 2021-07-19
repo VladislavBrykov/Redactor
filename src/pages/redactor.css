@@ -1,5 +1,4 @@
-HTML CSS JSResult Skip Results Iframe
-EDIT ON
+
 * {
   margin: 0;
   padding: 0;
@@ -8,13 +7,15 @@ EDIT ON
 }
 
 .filter-name {
-  background: #795548;
-  padding: 2px;
+  background: #050404;
+  /* padding: 20px; */
   display: inline-block;
-  color: white;
-  width: 100px;
+  color: rgb(255, 253, 253);
+  width: 150px;
   border-radius: 3px;
   text-align: center;
+  font-size: 1.2em;
+
 }
 
 .filter-group {
@@ -24,7 +25,7 @@ EDIT ON
 
 body {
   text-align: center;
-  margin: 20px auto;
+  margin: 1px auto;
   font-family: "Lato";
 }
 
@@ -34,45 +35,49 @@ h1 {
 }
 
 canvas {
+  margin-top: 5px;
   margin-bottom: 40px;
-  background: #ececec;
-  width: 600px;
+  background-image: url("https://img2.abo.media/upload/article/o_1c4hhpajoksq1cm11if3gpl7j1a_th_lnd_xx.jpg");
+  background-color: #e0bbbb;
+  width: 60%;
   max-width: 100%;
 }
 
 .filter-buttons button,
 .editor-buttons button {
-  margin: 4px;
+  margin: 6px;
   background: black;
   border: none;
   color: white;
   font-family: "Lato";
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-size: 1em;
+  /* padding: 20px 22px; */
+  border-radius: 78px;
+  font-size: 1.5em;
 }
 
 .filter-buttons button.disabled {
-  background: #aaa;
+  background: #d60303;
 }
 
 .filter-buttons button {
-  padding: 2px 10px;
+  padding: 15px 15px;
   margin: 0;
   cursor: pointer;
-  background: #ff5722;
+  background: #d60303;
 }
 
 .editor-buttons #reset-btn {
-  background: #f44336;
+  background: #fdfcfc;
 }
 
 .editor-buttons #download-btn {
-  background: #009688;
+  /* background: #009688; */
+  font-weight: bold;
+  background-image: url(https://us.123rf.com/450wm/valio84sl/valio84sl1601/valio84sl160100446/51375616-beautiful-nature-at-morning-in-the-misty-spring-forest-with-sun-rays.jpg?ver=6)
 }
 
 .editor-buttons button:hover {
-  background: #795548;
+  background: #f8f7f7;
   cursor: pointer;
 }
 
@@ -87,16 +92,460 @@ canvas {
 
 [type="file"] + label {
   margin: 10px 4px;
-  background: #673ab7;
+  /* background: #673ab7; */
+  background-image: url(https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg);
+  font-size: 1.5em;
+  font-weight: bold;
   border: none;
   color: white;
   cursor: pointer;
   font-family: "Lato";
-  padding: 8px 12px;
+  padding: 20px 22px;
   border-radius: 4px;
   display: inline-block;
 }
 
 [type="file"] + label:hover {
   background: #3399ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pricing-Table?list=tags&tag=pricing_table
+*/
+
+/*--------- Font ------------*/
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: content-box;
+}
+/*------ utiltity classes -----*/
+.fl{ float:left; }
+.fr{ float: right; }
+/*its also known as clearfix*/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1;  /*For IE 6/7 (trigger hasLayout) */
+}
+
+.main-menu {
+  background: #030202;
+
+}
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+    line-height: 1;
+    font-size: 16px;    
+}
+
+.pricing-table {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 10px;
+    padding-right: 0;
+}
+.pricing-table .heading{
+    color: #9C9E9F;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+}
+.block{
+    width: 30%;    
+    margin: 0 15px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;    
+/*    border: 1px solid red;*/
+}
+/*Shared properties*/
+.title,.pt-footer{
+    color: #FEFEFE;
+    text-transform: capitalize;
+    line-height: 2.5;
+    position: relative;
+}
+.content{
+    position: relative;
+    color: #FEFEFE;
+    padding: 20px 0 10px 0;
+}
+/*arrow creation*/
+.content:after, .content:before,.pt-footer:before,.pt-footer:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.pt-footer:after,.pt-footer:before{
+    top:0;
+}
+.content:after,.pt-footer:after {
+	border-color: rgba(136, 183, 213, 0);	
+	border-width: 5px;
+	margin-left: -5px;
+}
+/*/arrow creation*/
+.price{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.625rem;
+}
+.price span{    
+    font-size: 6rem;
+    letter-spacing: 8px;
+    font-weight: bold;        
+}
+.price sup{
+    font-size: 1.5rem;    
+    position: absolute;    
+    top: 12px;
+    left: -12px;
+}
+.hint{
+    font-style: italic;
+    font-size: 0.9rem;
+}
+.features{
+    list-style-type: none;    
+    background: #FFFFFF;
+    text-align: left;
+    color: #9C9C9C;
+    padding:30px 22%;
+    font-size: 0.9rem;
+}
+.features li{
+    padding:15px 0;
+    width: 100%;
+}
+.features li span{
+   padding-right: 0.4rem; 
+}
+.pt-footer{
+    font-size: 0.95rem;
+    text-transform: capitalize;
+}
+/*PERSONAL*/
+.personal .title{        
+    background: #78CFBF;    
+}
+.personal .content,.personal .pt-footer{
+    background: #82DACA;
+}
+.personal .content:after{	
+	border-top-color: #82DACA;	
+}
+.personal .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+/*PROFESSIONAL*/
+.professional .title{
+    background: #3EC6E0;
+}
+.professional .content,.professional .pt-footer{
+    background: #53CFE9;
+}
+.professional .content:after{	
+	border-top-color: #53CFE9;	
+}
+.professional .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+/*BUSINESS*/
+.business .title{
+    background: #E3536C;
+}
+.business .content,.business .pt-footer{
+    background: #EB6379;
+}
+.business .content:after{	
+	border-top-color: #EB6379;	
+}
+.business .pt-footer:after {	
+	border-top-color: #FFFFFF;	
+}
+
+
+
+
+
+
+
+
+
+
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;   
+  /* Для выравнивания меню по центру
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  */
+}
+.main-menu > li {
+  display: inline-flex;
+}
+.main-menu > li + li {
+  margin-left: 20px;
+}
+.main-menu > li > a {
+  padding: 0 0 20px 0;
+  position: relative;
+  text-transform: uppercase;   
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  text-decoration: none;   
+}
+.main-menu > li > a:hover {
+  text-decoration: none;   
+  color: #337AB7;
+}
+.main-menu > li > a:after {
+  width: 0;
+  height: 3px;
+  background-color: #337AB7;
+  content: '';
+  left: 0;
+  bottom: 10px;
+  position: absolute;
+  transition: all .3s;
+}
+.main-menu > li > a:hover::after {
+  width: 100%;
+}
+.main-menu > li.active a:after {
+  width: 100%;
+}
+.main-menu li {
+  margin: 0;
+  white-space: nowrap;
+}
+.main-menu li.menu-children {
+  position: relative;
+  margin-right: 12px;
+}
+.main-menu li.menu-children:after {
+  position: absolute;
+  content: "\2039";
+  color: #337AB7;
+  font-size: 20px;
+  font-weight: bold;
+  right: -12px;
+  top: -2px;
+  transform: rotate(-90deg);
+}
+.main-menu li li.menu-children:after {
+  position: absolute;
+  content: "\2039";
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  right: 10px;
+  top: 12px;
+  transform: rotate(180deg);
+}
+.main-menu li.menu-children:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.main-menu ul {
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  background-color: #337AB7;
+  position: absolute;
+  z-index: 20;
+  min-width: 220px;
+  top: 100%;
+  left: -30px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+  transition: all 200ms cubic-bezier(0.43, 0.59, 0.16, 1.25);
+}
+.main-menu ul li {
+  display: block;
+  padding: 0 10px;
+  line-height: 1.1;
+}
+.main-menu ul li:last-child {
+  margin-bottom: 0;
+}
+.main-menu ul li a {
+  display: block;
+  color: #fff;
+  padding: 10px;
+  transition: all .3s;
+  text-decoration: none;   
+}
+.main-menu ul li a:hover {
+  color: #337AB7;
+  background: #FFF;
+  text-decoration: none;   
+}
+.main-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.a body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+.button1 {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button1:hover {background-color: #3e8e41}
+
+.button1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
