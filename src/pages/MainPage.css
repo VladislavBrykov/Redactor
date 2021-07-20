@@ -1,39 +1,35 @@
 
 body {
-  /* background-color:black */
-  background-color:rgb(239, 167, 95)
-
+    background-color:rgb(239, 167, 95)
 }
 
 .h2 {
-  font-size: 19pm;
+    font-size: 19pm;
 }
 
 .features1{
-  list-style-type: none;    
-  background: #FFFFFF;
-  text-align: left;
-  color: #9C9C9C;
-  padding:30px 0%;
-  font-size: 0.9rem;
+    list-style-type: none;    
+    background: #FFFFFF;
+    text-align: left;
+    color: #9C9C9C;
+    padding:30px 0%;
+    font-size: 0.9rem;
 }
 
-      /* .body { font: 400 1em/1.5 "Neuton"; background: #090d00; color: rgba(255,255,255,.25); text-align: center; margin: 0 } */
-
-      .p {
-        text-transform: uppercase;
-        letter-spacing: .5em;
-        display: inline-block;
-        border: 4px double rgba(255,255,255,.25);
-        border-width: 4px 0;
-        padding: 1.5em 0em;
-        position: relative;
-        top: 2%;
-        left: 10%;
-        width: 50em;
-          bottom: unset;
-        margin: 0 0 0 -20em;
-      }
+.p {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    border: 4px double rgba(255,255,255,.25);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    position: relative;
+    top: 2%;
+    left: 10%;
+    width: 50em;
+      bottom: unset;
+    margin: 0 0 0 -20em;
+  }
         
         .span {
       
@@ -85,44 +81,27 @@ body {
         flex-direction: column;
     }
       
-
-
-
-
-
-
-      .effects {
+    .effects {
         background:url("https://i.ytimg.com/vi/AMAJLgafs6U/maxresdefault.jpg");
         width: 300px;
         height: 180px;
-      }
+    }
 
-
-
-      .img {
+    .img {
         position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-      }
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
-
-
-
-
-      
 .main-menu {
   list-style: none;
   margin: 0;
   padding: 0;
   margin-top: 30px;
   font-family: 'Montserrat', sans-serif;   
-  /* Для выравнивания меню по центру
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  */
+
 }
 .main-menu > li {
   display: inline-flex;
@@ -232,22 +211,6 @@ body {
   top: 0;
   left: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer */
 .site-footer
@@ -413,19 +376,6 @@ body {
     font-weight:600
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* REMOVE THIS, USE YOUR OWN  */
 html,body {

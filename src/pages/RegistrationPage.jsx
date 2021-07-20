@@ -16,7 +16,6 @@ function RegistrationPage() {
         let password = document.getElementById('pass').value;
         let passwordConfirmation = document.getElementById('pass').value;
         let email = document.getElementById('email').value;
-        
         const body = { "login": login, "password": password, "passwordConfirmation":passwordConfirmation, "email": email } // То что передаем на сервер
         console.log(body);
         axios.defaults.baseURL = 'http://localhost:3000/api';
@@ -53,5 +52,3 @@ function RegistrationPage() {
 }
 
 export default RegistrationPage;
-
-
